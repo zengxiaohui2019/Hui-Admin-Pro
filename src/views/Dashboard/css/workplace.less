@@ -1,0 +1,295 @@
+.workplace-page {
+  background-color: #f5f7f9;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 24px;
+  /*页面头部区域*/
+
+  & > .head {
+    padding: 16px 32px 32px 32px;
+    background: #fff;
+    border-bottom: 1px solid #e8eaec;
+    border-radius: 4px;
+
+    p {
+      color: #17233d;
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    & > div {
+      justify-content: space-between;
+
+      & > .left {
+        & > div:first-child {
+          margin-right: 15px;
+
+          .ivu-avatar-image {
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            border-radius: 50%;
+          }
+        }
+
+        & > div:last-child {
+          & > span:first-child {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+          }
+
+          & > span:last-child {
+            color: #808695;
+
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
+      & > .right {
+        align-items: flex-end;
+
+        & > div:first-child {
+          span {
+            margin-left: 10px;
+          }
+        }
+
+        & > div:last-child {
+          span {
+            font-size: 22px;
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  & > .content {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 16px;
+    /*区块头部*/
+
+    .title {
+      justify-content: space-between;
+      border-bottom: 1px solid #e8eaec;
+      padding: 14px 16px;
+
+      & > .left {
+        .ivu-avatar-small {
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          border-radius: 12px;
+          color: rgb(114, 46, 209);
+          background-color: rgb(249, 240, 255);
+        }
+
+        span {
+          margin-left: 8px;
+        }
+      }
+
+      & > .right {
+        width: 21%;
+        justify-content: flex-end;
+        position: relative;
+
+        & > div:first-child {
+          width: calc(100% - 200px);
+          justify-content: space-between;
+          margin-right: 20px;
+
+          span {
+            cursor: pointer;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    & > div {
+      border-radius: 4px;
+      position: relative;
+      transition: all .2s ease-in-out;
+    }
+
+    & > .left {
+      width: calc(66.66% - 12px);
+      /*我的项目*/
+      .item {
+        width: 100%;
+        margin-top: 16px;
+        background-color: #fff;
+
+        & > .body {
+          padding: 6px;
+          flex-wrap: wrap;
+
+          & > div {
+            width: 33.33%;
+            padding: 6px;
+            position: relative;
+            background-color: #fff;
+
+            &:hover {
+              z-index: 1;
+              -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+              box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+            }
+
+            & > .bg {
+              height: 100px;
+              //background-image: url("../../../assets/dashboard/middle.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: 50%;
+              cursor: pointer;
+              border-radius: 3px;
+              text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+
+              & > div {
+                background-color: rgba(0, 0, 0, 0.1);
+                height: 100%;
+
+                span:first-child {
+                  color: #fff;
+                  font-weight: 700;
+                  padding: 4px 0 0 8px;
+                  font-size: 16px;
+                  margin-right: 45px;
+                }
+
+                span:last-child {
+                  color: #fff;
+                  padding: 4px 0 0 8px;
+                  font-size: 12px;
+                  margin-right: 45px;
+                }
+              }
+            }
+          }
+        }
+      }
+      /*动态*/
+      .dynamic {
+        & > .body {
+          justify-content: center;
+          align-items: center;
+
+          & > div:last-child {
+            border-bottom: none;
+          }
+
+          & > div {
+            width: 98%;
+            padding: 20px 0;
+            border-bottom: 1px solid #e8eaec;
+
+            &:hover {
+              box-shadow: none;
+            }
+
+            & > div:first-child {
+              margin: 0 20px 0 10px;
+            }
+
+            & > div:last-child {
+              & > span:last-child {
+                font-size: 12px;
+                color: rgb(128, 134, 149);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & > .right {
+      width: calc(33.33% - 12px);
+      /*快捷操作*/
+      .item {
+        width: 100%;
+        margin-top: 16px;
+        background-color: #fff;
+
+        & > .body {
+          padding: 6px;
+          flex-wrap: wrap;
+
+          & > div {
+            width: 33.33%;
+            padding: 6px;
+            background-color: #fff;
+            margin-top: 16px;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        & > .options {
+          padding: 6px 6px 15px 6px;
+          flex-wrap: wrap;
+
+          span {
+            width: 25%;
+            padding: 8px;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+              color: #1890FF;
+            }
+          }
+          .optionsBtn{
+            &>span{
+              display: initial;
+              padding: 0
+            }
+          }
+        }
+      }
+      /*小组人员*/
+      .Group_member {
+        & > .body {
+          & > div {
+            width: 95%;
+            padding: 10px 10px 10px 20px;
+            justify-content: space-between;
+
+            & > div{
+              justify-content: flex-start;
+              & > div:first-child {
+                margin: 0 20px 0 10px;
+              }
+              .status{
+                margin: 2px 4px 2px 0;
+                padding: 2px 8px;
+                border: 1px solid #b7eb8f;
+                border-radius: 3px;
+                background: #f6ffed;
+                color: #52c41a;
+              }
+              .red{
+                background: #fff1f0;
+                border-color: #ffa39e;
+                color: #f5222d;
+              }
+              & > div:last-child {
+                & > span:last-child {
+                  font-size: 12px;
+                  color: rgb(128, 134, 149);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

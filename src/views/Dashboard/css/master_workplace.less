@@ -1,0 +1,293 @@
+.master_workplace-page {
+  background-color: #f5f7f9;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 24px;
+  .fourDIv{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &>div{
+      border-radius: 4px;
+      font-size: 14px;
+      position: relative;
+      transition: all .2s ease-in-out;
+      width: calc(25% - 18px);
+      &>.item{
+        flex-grow: 1;
+        background-color: #fff;
+        &>div:nth-child(1){
+          border-bottom: 1px solid #e8eaec;
+          padding: 14px 16px;
+          justify-content: space-between;
+          height: 55px;
+          /*访问量*/
+          &>span:first-child{
+            color: #17233d;
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .day{
+            margin: 2px 4px 2px 0;
+            padding: 0 8px;
+            border: 1px solid #b7eb8f;
+            line-height: 20px;
+            color: #52c41a;
+            background: #f6ffed;
+          }
+          .month{
+            background: #e6f7ff;
+            border-color: #91d5ff;
+            color: #1890ff;
+          }
+          .week{
+            background: #fff1f0;
+            border-color: #ffa39e;
+            color: #f5222d;
+          }
+        }
+        &>div:nth-child(2){
+          padding: 12px 12px 0 12px;
+          &>span:first-child{
+            font-size: 30px;
+          }
+          &>.percentage{
+            border-bottom: 1px solid #e8eaec;
+            padding-bottom: 15px;
+            height: 45px;
+            &>div:first-child{
+              margin-right: 10px;
+            }
+          }
+        }
+        &>div:nth-child(3){
+          padding: 12px;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  .moreFast{
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+    &>div{
+      padding: 16px;
+      background: #fff;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: all .2s ease-in-out;
+      width: calc(12.5% - 20px);
+      text-align: center;
+      cursor: pointer;
+      &>i{
+        font-size: 32px;
+      }
+      &>span{
+        margin-top: 8px;
+      }
+    }
+    &>div:nth-child(1){
+      &>i{
+        color: #69C0FF;
+      }
+    }
+    &>div:nth-child(2){
+      &>i{
+        color: #95DE64;
+      }
+    }
+    &>div:nth-child(3){
+      &>i{
+        color: #FF9C6E;
+      }
+    }
+    &>div:nth-child(4){
+      &>i{
+        color: #B37FEB;
+      }
+    }
+    &>div:nth-child(5){
+      &>i{
+        color: #FFD666;
+      }
+    }
+    &>div:nth-child(6){
+      &>i{
+        color: #5CDBD3;
+      }
+    }
+    &>div:nth-child(7){
+      &>i{
+        color: #FF85C0;
+      }
+    }
+    &>div:nth-child(8){
+      &>i{
+        color: #FFC069;
+      }
+    }
+  }
+
+  .access{
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 4px;
+    &>.head{
+      justify-content: space-between;
+      border-bottom: 1px solid #e8eaec;
+      padding: 14px 16px;
+      &>.left{
+        .ivu-avatar-small {
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          border-radius: 12px;
+          color: rgb(24, 144, 255);
+          background-color: rgb(230, 247, 255);
+        }
+        span{
+         margin-left: 8px;
+        }
+      }
+      &>.right{
+        width: 21%;
+        justify-content: space-between;
+        &>div:first-child{
+          width: calc(100% - 200px);
+          justify-content: space-between;
+          margin-right: 20px;
+          span{
+            cursor: pointer;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &>.content{
+      justify-content: space-between;
+      padding: 16px;
+      align-items: flex-start;
+      p{
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      /*趋势*/
+      &>div:first-child{
+        width: calc(66.666% - 20px);
+      }
+      /*排行*/
+      &>div:last-child{
+        width: calc(33.333% - 20px);
+        &>.ranking{
+          div{
+            justify-content: space-between;
+            margin-bottom: 12px;
+            &>span:first-child{
+              width: 58.33333333%;
+              .active{
+                color: rgb(24, 144, 255);
+                background-color: rgb(230, 247, 255);
+              }
+              &>span:last-child{
+                margin-left: 15px;
+              }
+            }
+            &>span:last-child{
+              width: 41.66666667%;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sch{
+    margin-top: 20px;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: flex-start;
+    &>div{
+      width: calc(50% - 12px);
+      background: #fff;
+      &>.head{
+        justify-content: space-between;
+        border-bottom: 1px solid #e8eaec;
+        padding: 14px 16px;
+        &>.left{
+          .ivu-avatar-small {
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            border-radius: 12px;
+            color: rgb(114, 46, 209);
+            background-color: rgb(249, 240, 255);
+          }
+          span{
+            margin-left: 8px;
+          }
+        }
+        &>.right{
+          width: 21%;
+          justify-content: flex-end;
+          position: relative;
+          &>div:first-child{
+            width: calc(100% - 200px);
+            justify-content: space-between;
+            margin-right: 20px;
+            span{
+              cursor: pointer;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      &>.content {
+        justify-content: space-between;
+        padding: 16px;
+        align-items: flex-start;
+        &>.item1{
+          width: calc(50% - 12px);
+          &>div:nth-child(2){
+            margin-top: 8px;
+            div{
+              p{
+                margin-right: 32px;
+                color: #515a6e;
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+      &>.tableDiv{
+        padding: 0 16px 16px 16px;
+        .ivu-table-wrapper{
+          border: none;
+          .ivu-table{
+            th{
+              background: none;
+            }
+            /*去掉边框*/
+            &:after, &:before{
+              height: 0;
+            }
+          }
+        }
+        &>div:last-child{
+          margin-top: 15px;
+          justify-content: flex-end;
+        }
+      }
+    }
+    &>div:last-child{
+      .ivu-avatar-small{
+        color: rgb(250, 173, 20)!important;
+        background-color: rgb(255, 251, 230)!important;
+      }
+    }
+  }
+}

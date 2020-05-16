@@ -1,0 +1,108 @@
+body{
+  overflow: hidden;
+}
+.flexR {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0; /*如果元素的大小是根据其子元素的来决定，并没有设置width、height或flex-basis 容器重叠在一起的兼容问题*/
+}
+
+.flexC {
+  display: inline-flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.pointer {
+  cursor: pointer;
+  &:hover{
+    color: #1890FF;
+  }
+}
+
+.blueText {
+  color: #1890FF;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+/*滚动条美化*/
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background-color:#F1F1F1;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius:2em;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #d8d9da;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius:2em;
+}
+/*页面头部 公用*/
+.pageHead{
+  padding: 16px 32px 0 32px;
+  background: #fff;
+  border-bottom: 1px solid #e8eaec;
+  p{
+    margin-bottom: 16px;
+  }
+  &>p:first-child{
+    color: #17233d;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &>p:last-child{
+    font-size: 14px;
+  }
+}
+.pageContent{
+  margin-top: 16px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  position: relative;
+  transition: all .2s ease-in-out;
+  .pageContent_head{
+    justify-content: space-between;
+    border-bottom: 1px solid #e8eaec;
+    padding: 14px 16px;
+    &>div:first-child{
+      font-size: 16px;
+      color: #17233d;
+      font-weight: 500;
+    }
+  }
+  .pageDiv{
+    padding: 16px;
+    justify-content: flex-end;
+  }
+}
+/*model垂直居中*/
+.vertical-center-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ivu-modal{
+    top: 0;
+  }
+}
+/*阴影效果*/
+.hui-box-shadow{
+  position: relative;
+  &:hover {
+    z-index: 1;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  }
+}
+

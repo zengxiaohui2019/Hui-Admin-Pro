@@ -1,0 +1,459 @@
+.layout-page {
+  background: #f5f7f9;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 14px;
+
+  & > .layout-div {
+    /*顶部区域*/
+
+    .header {
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,21,41,.08);
+      transition: all .2s ease-in-out;
+      justify-content: space-between;
+      height: 64px;
+      line-height: 64px;
+      padding: 0;
+      .ivu-breadcrumb>span:last-child {
+        font-weight: lighter;
+      }
+      i {
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      .header_left {
+        min-width: 300px;
+        width: auto;
+        padding-left: 15px;
+
+        & > span {
+          display: inline-flex;
+          //flex-grow: 1;
+          min-width: 45px;
+          //&:hover{
+          //  background-color: #F8F8F9;
+          //}
+        }
+      }
+
+      .header_right {
+        min-width: 240px;
+
+        i:last-child {
+          margin-right: 0px;
+        }
+
+        & > span {
+          display: inline-flex;
+          flex-grow: 1;
+          //&:hover{
+          //  background-color: #F8F8F9;
+          //}
+          &:last-child {
+            flex-grow: 0.5;
+          }
+
+          .ivu-badge {
+            display: inline-flex;
+            top: 5px;
+
+            sup {
+              transform: translateX(-19%);
+              top: -14px;
+            }
+          }
+        }
+      }
+    }
+
+    /*导航切换*/
+
+    .tabsNav {
+      background: #f5f7f9;
+      padding: 6px 0;
+      margin: 3px 15px 0 15px;
+      justify-content: space-between;
+
+      & > .left {
+        width: calc(100% - 80px);
+        overflow: hidden;
+
+        & > div {
+          position: relative;
+          transition: transform .5s ease-in-out;
+
+          & > div {
+            height: 32px;
+            background: #fff;
+            border-radius: 3px;
+            margin-right: 6px;
+            color: #808695;
+            padding: 5px 10px 4px 0px;
+            justify-content: space-around;
+            white-space: nowrap;
+            span{
+              padding-left: 16px;
+            }
+            i {
+              margin-left: 5px;
+              cursor: pointer;
+            }
+
+            & > .active {
+              color: #2d8cf0;
+            }
+          }
+        }
+
+        .ivu-select-dropdown {
+          top: 101px !important;
+        }
+      }
+
+      & > .right {
+        .xiala {
+          width: 32px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background-color: #fff;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    /*左边部分*/
+    /*黑色主题风格 默认*/
+    .ivu-layout-sider {
+      background: #191a23;
+      min-height: 100vh;
+
+      .logo {
+        border-bottom: 1px solid #101117;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        overflow: hidden;
+        background: #191a23;
+        box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+        img {
+          height: 80%;
+          vertical-align: middle;
+        }
+      }
+      // 最大宽度
+      .headMaxWidth{
+        background-color: white;
+        border-right: none!important;
+        box-shadow: none!important;
+      }
+      .ivu-menu-dark {
+        background: #191a23;
+      }
+
+      .ivu-menu-submenu-title:hover {
+        background: none !important;
+      }
+
+      .ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened {
+        background: #101117;
+      }
+
+      .ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title {
+        background: #191a23;
+      }
+
+      /*默认 打开*/
+
+      .menu-item {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          display: none; /* Chrome Safari */
+        }
+        box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+        /*单页面 s*/
+        &>.ivu-menu-item{
+          &:hover{
+            background: none;
+            color: #fff;
+          }
+        }
+        &>.liActive{
+          background-color: #2d8cf0;
+          &>div{
+            color: #fff;
+          }
+          &:hover{
+            background-color: #2d8cf0;
+            color: #fff;
+          }
+        }
+        /*单页面 e*/
+        .ivu-menu-item {
+          padding-left: 50px !important;
+        }
+
+        i {
+          transition: font-size .2s ease, transform .2s ease;
+          vertical-align: middle;
+          font-size: 16px;
+        }
+
+        .ivu-menu-submenu-title, .ivu-menu, .ivu-menu-submenu {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .ivu-menu-item {
+          span {
+            width: calc(100% - 50px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+
+        .titlespan {
+          display: inline-block;
+          width: 90px;
+          margin-left: 10px;
+          vertical-align: bottom;
+          transition: width .2s ease .2s;
+        }
+      }
+    }
+    /*白色主题风格*/
+    .themeLight{
+      background: #fff;
+      .logo{
+        background: #fff;
+        border-bottom: 1px solid #f8f8f9;
+        border-right: 1px solid #f1f1f2;
+        box-shadow: 2px 7px 8px 0 rgba(29,35,41,.05);
+      }
+      .menu-item{
+        box-shadow: 2px 7px 8px 0 rgba(29,35,41,.05);
+        /*单页面 s*/
+        &>.ivu-menu-item{
+          &:hover{
+            background: none;
+            color: #fff;
+          }
+        }
+        &>.liActive{
+          background-color: #EBF5FA;
+          &>div{
+            color: #4398F2;
+          }
+          &:hover{
+            background-color: #EBF5FA;
+            color: #4398F2;
+          }
+          &:after {
+            content: '';
+            display: block;
+            width: 2px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background: #2d8cf0;
+          }
+        }
+        /*单页面 e*/
+      }
+      /*收起*/
+      .collapsed-menu{
+        align-content: flex-start;
+        &>.menuSmall{
+          width: 100%;
+        }
+        .menuSmall > div:first-child{
+          background: #fff;
+          i {
+            color: #565F73;
+          }
+          .active {
+            position: relative;
+            background-color: #f0faff;
+            i {
+              color: #2D8CF0;
+            }
+            &:after{
+              content: '';
+              display: block;
+              width: 2px;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 1px;
+              background: #2d8cf0;
+            }
+          }
+        }
+        .menuSmall > div:last-child {
+          background: #fff;
+          left: 79px !important;
+          width: 160px;
+          .ivu-dropdown-item-selected {
+            background-color: #f0faff;
+            color: #2D8CF0;
+            &:hover {
+              background-color: #f0faff!important;
+            }
+          }
+          ul{
+            li{
+              color: #515a6e;
+            }
+          }
+          .ivu-select-dropdown{
+            min-width: 160px;
+          }
+
+          .ivu-dropdown-item:hover {
+            background-color: #F3F3F3;
+            color: #2D8CF0;
+          }
+        }
+      }
+    }
+    /*收起 默认*/
+    .collapsed-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+      align-content: flex-start;
+      .menuSmall {
+        position: relative;
+        width: 100%;
+        & > div:first-child {
+          span {
+            width: 100%;
+            height: 52px;
+            padding: 14px 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+              color: #BABBBD;
+            }
+          }
+
+          .active {
+            background-color: #2e93f8;
+
+            i {
+              color: #fff;
+            }
+          }
+        }
+
+        /*下拉菜单弹出层*/
+
+        & > div:last-child {
+          left: 79px !important;
+          top: 10px !important;
+          background-color: #191A23;
+          ul {
+            min-width: 160px;
+            li {
+              text-align: left;
+              color: #BABBBD;
+              width: 100%;
+            }
+          }
+          .ivu-dropdown-item-selected {
+            background-color: #2D8CF0;
+            color: white;
+
+            &:hover {
+              background-color: #2D8CF0 !important;
+            }
+          }
+
+          .ivu-dropdown-item:hover {
+            background-color: #191A23;
+            color: white;
+          }
+        }
+        .ivu-select-dropdown{
+          min-width: 160px;
+        }
+      }
+
+      .ivu-menu-opened {
+        i {
+          color: white !important;
+        }
+      }
+    }
+    /*内容区*/
+    .main_content{
+      background-color: #f5f7f9;
+      overflow-y: auto;
+      justify-content: space-between;
+      &>div:first-child{
+        //overflow-y: auto;
+        padding-right: 24px;
+        //height: 100%;
+      }
+
+    }
+  }
+}
+/*主题风格设置*/
+.optionDrawer{
+  .ivu-drawer-header{
+    border-bottom: 0px;
+    padding: 14px 16px 0px 16px;
+    .header{
+      width: 95%;
+      min-width: 95%;
+      font-size: 14px!important;
+    }
+  }
+  .ivu-drawer-body{
+    .imgs{
+      width: 100%;
+      justify-content: center;
+      &>div{
+        cursor: pointer;
+        position: relative;
+      }
+      &>div:nth-child(2n){
+        margin-left: 40px;
+      }
+      .active{
+        &:after{
+          position: absolute;
+          left: 50%;
+          content: "";
+          width: 6px;
+          height: 6px;
+          border-radius: 6px;
+          background: #19be6b;
+        }
+      }
+    }
+    .otherDiv{
+      width: 95%;
+      min-width: 95%;
+      font-size: 14px!important;
+    }
+    .kaiguan{
+      justify-content: space-between;
+      width: 65%;
+      margin: 0 auto 15px auto;
+    }
+  }
+}
