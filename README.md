@@ -1,7 +1,8 @@
 # Hui-Admin Pro
 ## 专业全功能版
 
-1. 简述：如果你不想支付9999体验iview-Admin-Pro,或许Hui-Admin Pro专业版是你的另外一个选择，是基于基础版 增加更多复杂功能
+1. 简述：如果你不想支付9999体验iview-Admin-Pro,或许Hui-Admin Pro专业版是你的另外一个选择，
+是基于基础版 增加更多复杂功能 [在线演示](https://www.zengxiaohui.com/Hui-Admin-Pro)
     
 2. 主要技术：
 
@@ -9,6 +10,7 @@
         vue-router路由跳转 (层级嵌套适配、跳转前的拦截、跳转后页面自动滚到顶部)
         vuex管理 (导航高亮、多分页标签切换、根据用户动态菜单路由控制等)
         less flex弹性布局
+        
 3. 更新日志：
         
         1.x 在2019年已经完成 具体看提交记录
@@ -143,7 +145,7 @@
 GitHub https://github.com/zengxiaohui2019/Hui-Admin-Pro
 
 ### 效果
-在线演示: https://www.zengxiaohui.com/Hui-Admin-Pro
+
 ![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin1.jpg)
 
 ![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin1-1.jpg)
@@ -170,3 +172,8 @@ GitHub https://github.com/zengxiaohui2019/Hui-Admin-Pro
 2. 禁止使用本软件从事违法犯罪的事情，在使用时产生的任何法律刑事责任于本软件无关 (想不出来能做什么违法的事情，但还是要申明一下)。
 3. 由于个人才识技术浅薄，在使用本软件造成的一切损失于本软件无关 (应该不存在，只是一个前端页面而已)。
 4. 有问题可联系本人 (大前提：请先百度尝试解决后最终没有找到解决办法)，可付费或免费获得支持。
+
+### 项目使用图片版权说明
+
+1. 本项目使用的图片来源网络，版权归原作者所有
+2. 由于没有联系到原作者，若涉及版权问题，请联系本人，予以删除，谢谢
