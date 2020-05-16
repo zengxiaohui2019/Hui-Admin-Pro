@@ -11,39 +11,30 @@
         </div>
         <div class="pageContent flexC">
             <Form ref="json" :model="json" :rules="checkdate" :label-width="130" style="width: 700px">
-                <FormItem label="会议名称" prop="name">
-                    <Input v-model="json.name" placeholder="请输入会议名称" maxlength="50" show-word-limit></Input>
+                <FormItem label="项目名称" prop="name">
+                    <Input v-model="json.name" placeholder="请输入项目名称" maxlength="50" show-word-limit></Input>
                 </FormItem>
-                <FormItem label="会议内容" prop="content">
-                    <Input v-model="json.content" placeholder="请输入会议内容简要"></Input>
+                <FormItem label="项目简介" prop="content">
+                    <Input v-model="json.content" placeholder="请输入项目简介"></Input>
                 </FormItem>
                 <FormItem label="起止时间" prop="time">
                     <DatePicker v-model="json.time" format="yyyy-MM-dd hh:mm" type="datetimerange" placement="bottom-start" placeholder="请选择起止时间"
                     style="width: 100%"
                     ></DatePicker>
                 </FormItem>
-                <FormItem label="会议地点" prop="location">
-                    <Select v-model="json.location" placeholder="请选择会议地点">
+                <FormItem label="办公地点" prop="location">
+                    <Select v-model="json.location" placeholder="请选择办公地点">
                         <Option value="beijing">New York</Option>
                         <Option value="shanghai">London</Option>
                         <Option value="shenzhen">Sydney</Option>
                     </Select>
                 </FormItem>
-                <FormItem label="参会者（选填）" prop="user">
-                    <Select v-model="json.user" filterable multiple placeholder="选择或搜索参会者">
+                <FormItem label="参入人员（选填）" prop="user">
+                    <Select v-model="json.user" filterable multiple placeholder="选择或搜索参入人员">
                         <Option value="beijing">New York</Option>
                         <Option value="shanghai">London</Option>
                         <Option value="shenzhen">Sydney</Option>
                     </Select>
-                </FormItem>
-                <FormItem label="备注（选填）" prop="desc">
-                    <Input v-model="json.desc" maxlength="300" show-word-limit type="textarea" :autosize="{minRows: 3,maxRows: 5}" placeholder="Enter something..."></Input>
-                </FormItem>
-                <FormItem label="视频支持">
-                    <RadioGroup v-model="json.video">
-                        <Radio label="是"></Radio>
-                        <Radio label="否"></Radio>
-                    </RadioGroup>
                 </FormItem>
                 <FormItem>
                     <Button type="primary" @click="handleSubmit('json')">提交</Button>

@@ -332,6 +332,11 @@
       align-items: center;
       width: 100%;
       align-content: flex-start;
+      // 栏目收缩 无法显示提示bug
+      overflow-y: visible!important;
+      &::-webkit-scrollbar {
+        display: none; /* Chrome Safari */
+      }
       .menuSmall {
         position: relative;
         width: 100%;

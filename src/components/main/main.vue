@@ -47,16 +47,16 @@
                             <span style="margin-left: 10px">{{it.meta.title}}</span>
                         </div>
                     </MenuItem>
-                    <Dropdown v-for="(item,index) in routersArr" :key="index" v-if="isCollapsed && !item.meta.hide"
+                    <Dropdown v-for="(item,ind) in routersArr" :key="ind" v-if="isCollapsed && !item.meta.hide"
                               class="menuSmall" @on-click="dropdownNav">
                             <span :class="item.name === $route.meta.fuName?'active':''">
                                 <Icon :type="item.meta.icon"/>
                             </span>
                         <DropdownMenu slot="list">
-                            <template v-for="it in item.children">
-                                <DropdownItem v-if="!it.meta.hide" :key="it.name" :name="it.name" :selected="it.name === activeName">{{it.meta.title}}
-                                </DropdownItem>
-                            </template>
+                            <DropdownItem v-for="it in item.children" v-if="!it.meta.hide" :key="it.name" :name="it.name"
+                                          :selected="it.name === activeName">
+                                {{it.meta.title}}
+                            </DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
                 </Menu>

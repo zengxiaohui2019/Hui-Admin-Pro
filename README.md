@@ -6,7 +6,7 @@
     - Hui-Admin-Pro是基于[基础版 Hui-Admin-Template](https://github.com/zengxiaohui2019/Hui-Admin-Template) 增加更多复杂功能 
     - [Hui-Admin-Pro 在线演示](https://www.zengxiaohui.com/Hui-Admin-Pro)
     - [Hui-Admin-Template 在线演示](https://www.zengxiaohui.com/Hui-Admin-Template)
-    - 说明：本人是写这个框架是抱着学习态度，无意冲突商业大佬利益。
+    - 说明：本人写这个框架是抱着学习态度，无意冲突商业大佬利益。
     - 兼容说明：初测兼容ie11 360极速模式 谷歌 火狐 其他未测；界面适配笔记本和日常PC；不适配平板和手机。
         
 2. 主要技术：
@@ -152,11 +152,11 @@ GitHub https://github.com/zengxiaohui2019/Hui-Admin-Pro
 
 ### 效果
 
+![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/login.jpg)
+
 ![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin1.jpg)
 
 ![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin1-1.jpg)
-
-![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin1-2.jpg)
 
 ![极简雅白主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin2.jpg)
 

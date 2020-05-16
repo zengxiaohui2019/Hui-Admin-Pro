@@ -6,41 +6,17 @@
 <template>
     <div class="workplace-page flexC">
         <div class="head flexC">
-            <p>{{$route.meta.title}}</p>
             <div class="flexR">
                 <div class="left flexR">
                     <div>
                         <Avatar :src="avatarImg" />
                     </div>
                     <div class="flexC">
-                        <span>早安，{{$store.getters.userData.userName}}，开始您一天的工作吧！</span>
+                        <span>早安，{{$store.getters.userData.userName}}，新的一天新的开始！</span>
                         <span> <Icon type="md-rainy" />今日阴转小雨，22℃ - 32℃，出门记得带伞哦。</span>
                     </div>
                 </div>
                 <div class="right flexC">
-                    <div class="flexR">
-                        <span class="flexR">
-                            <Avatar style="color: rgb(64, 169, 255); background-color: rgb(230, 247, 255);" icon="md-apps" size="small"/>
-                            <span>项目数</span>
-                        </span>
-                        <span class="flexR">
-                            <Avatar style="color: rgb(255, 169, 64); background-color: rgb(255, 247, 230);" icon="md-checkbox-outline" size="small"/>
-                            <span>待办项</span>
-                        </span>
-                        <span class="flexR">
-                            <Avatar style="color: rgb(115, 209, 61); background-color: rgb(246, 255, 237);" icon="logo-usd" size="small"/>
-                            <span>积分</span>
-                        </span>
-                    </div>
-                    <div class="flexR">
-                        <span>15</span>
-                        <span>
-                            <Tooltip content="待办：3 / 总计：24" placement="top">
-                                <span>3 / 24</span>
-                            </Tooltip>
-                        </span>
-                        <span>1,689</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -52,10 +28,10 @@
                     <div class="title flexR">
                         <div class="left flexR">
                             <Avatar icon="md-apps" style="color: rgb(24, 144, 255); background-color: rgb(230, 247, 255);" size="small"/>
-                            <span>我的项目</span>
+                            <span>最近使用的产品</span>
                         </div>
                         <div class="right flexR">
-                            <span class="blueText">全部项目</span>
+                            <span class="blueText">全部产品</span>
                         </div>
                     </div>
                     <div class="body flexR">
@@ -74,11 +50,8 @@
                     <div class="title flexR">
                         <div class="left flexR">
                             <Avatar icon="md-bulb" style="color: rgb(114, 46, 209); background-color: rgb(249, 240, 255);" size="small"/>
-                            <span>动态</span>
+                            <span>资源预警</span>
                         </div>
-                        <!--<div class="right flexR">
-                            <span class="blueText">更多动态</span>
-                        </div>-->
                     </div>
                     <div class="body flexR">
                         <div class="flexR">
@@ -87,9 +60,9 @@
                             </div>
                             <div class="flexC">
                                 <span>
-                                    <strong>曾小晖</strong>
-                                    <span> 关注了 </span>
-                                    <span class="blueText">ZXHui</span>
+                                    <strong>ECS</strong>
+                                    <span> 实例负载过高 </span>
+                                    <span class="blueText">查看</span>
                                 </span>
                                 <span>10-01 11:35</span>
                             </div>
@@ -100,24 +73,9 @@
                             </div>
                             <div class="flexC">
                                 <span>
-                                    <strong>曾小晖</strong>
-                                    <span> 发表了 </span>
+                                    <strong>Cpu</strong>
+                                    <span> 超负荷响应 </span>
                                     <span class="blueText">HUi Admin Pro 管理系统</span>
-                                </span>
-                                <span>10-07 11:35</span>
-                            </div>
-                        </div>
-                        <div class="flexR">
-                            <div>
-                                <Avatar src="https://www.zengxiaohui.com/vueImg/avatar3.jpg" size="large"/>
-                            </div>
-                            <div class="flexC">
-                                <span>
-                                    <strong>石乐志</strong>
-                                     回复了
-                                    <span class="blueText"> 小灰灰 </span>
-                                    的文章
-                                    <span class="blueText">关于HUi Admin Pro 使用的问题</span>
                                 </span>
                                 <span>10-07 11:35</span>
                             </div>
@@ -128,9 +86,9 @@
                             </div>
                             <div class="flexC">
                                 <span>
-                                    <strong>曾小鱼</strong>
-                                    <span> 关注了 </span>
-                                    <span class="blueText">ZXHui</span>
+                                    <strong>磁盘不足</strong>
+                                    <span> 当前服务器预警 </span>
+                                    <span class="blueText">检查</span>
                                 </span>
                                 <span>10-01 11:35</span>
                             </div>
@@ -181,8 +139,6 @@
                     <Divider style="width: 90%; min-width: 90%;margin: 16px auto;"/>
 
                     <div class="options flexR">
-                        <span>操作一</span>
-                        <span>操作一</span>
                         <span>操作一</span>
                         <span>操作一</span>
                         <span>
@@ -244,22 +200,6 @@
                                         <strong>晖小晖</strong>
                                     </span>
                                     <span>hui xiaohui</span>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="status">在线</span>
-                            </div>
-                        </div>
-                        <div class="flexR">
-                            <div class="flexR">
-                                <div>
-                                    <Avatar src="https://www.zengxiaohui.com/vueImg/avatar.jpg"/>
-                                </div>
-                                <div class="flexC">
-                                    <span>
-                                        <strong>曾小鱼</strong>
-                                    </span>
-                                    <span>zeng xiaoyu</span>
                                 </div>
                             </div>
                             <div>

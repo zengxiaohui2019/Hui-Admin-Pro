@@ -28,7 +28,7 @@ export const constantRoutes = [
     {
         path: "/",
         name: "Dashboard",
-        redirect: '/master_workplace',
+        redirect: '/workplace',
         component: Main,
         meta: {
             hide: false,
@@ -36,15 +36,6 @@ export const constantRoutes = [
             icon: "md-speedometer",
         },
         children: [
-            {
-                path: "/master_workplace",
-                name: "master_workplace",
-                meta: {
-                    hide: false,
-                    title: "主控台"
-                },
-                component: () => import("@/views/Dashboard/master_workplace")
-            },
             {
                 path: "/workplace",
                 name: "workplace",
@@ -152,16 +143,6 @@ export const asyncRoutes = [
             roleId: 4
         },
         children: [
-            {
-                path: "/list/basic_list",
-                name: "basic_list",
-                meta: {
-                    hide: false,
-                    title: "基础列表",
-                    roleId: 5
-                },
-                component: () => import("@/views/list/basic_list")
-            },
             {
                 path: "/list/user_list",
                 name: "user_list",
