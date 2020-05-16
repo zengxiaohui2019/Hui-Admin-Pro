@@ -3,8 +3,8 @@
  *   @author Xiaohui Zeng
  *   @date 2019/10/5
  */
-// 默认首页
-export const siteTitle = 'HuiVue Admin Pro 企业级中台前端解决方案'
+// 默认系统名称
+export const siteTitle = 'Hui-Admin-Pro 企业级中台前端解决方案'
 // 默认首页
 export const indexPage = 'master_workplace'
 // 默认登录页

@@ -8,6 +8,7 @@
         <div class="flexR">
             <span><a href="https://www.zengxiaohui.com/Hui-Admin-Pro" target="_blank">官网</a></span>
             <span><a href="https://gitee.com/zengxiaohui2019/Hui-Admin-Pro" target="_blank">码云</a></span>
+            <span><a href="https://github.com/zengxiaohui2019/Hui-Admin-Pro" target="_blank">GitHub</a></span>
             <span>专业版</span>
         </div>
         <div class="flexR">
