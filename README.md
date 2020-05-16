@@ -1,7 +1,7 @@
 # Hui-Admin Pro
 ## 专业全功能版
 
-1. 简述：如果你不想支付9999体验iview-Admin-Pro,或许Hui-Admin-Pro是你的另外一个选择。
+1. 简述：如果你喜欢iviewUI风格,或许Hui-Admin-Pro是你的另外一个选择。
 
     - Hui-Admin-Pro是基于[基础版 Hui-Admin-Template](https://github.com/zengxiaohui2019/Hui-Admin-Template) 增加更多复杂功能 
     - [Hui-Admin-Pro 在线演示](https://www.zengxiaohui.com/Hui-Admin-Pro)
