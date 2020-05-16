@@ -4,7 +4,7 @@
 1. 简述：
 
         Hui-Admin Pro专业版 是基于基础版 增加更多复杂功能
-        
+    
 2. 主要技术：
 
         iview4.0 + vuecli3.0
@@ -17,7 +17,7 @@
         npm install 安装依赖包 使用淘宝镜像 npm install --registry=https://registry.npm.taobao.org
         npm run dev 开发模式运行
         npm run build 打包
-        
+
 ### 已安装插件
 1. axios 0.19.0 // 接口请求控件
 2. view-design 4.0.0
@@ -59,7 +59,7 @@
             package.json            npm包管理文件
             README.md               说明文档
             vue.config.js           开发打包配置文件
-        
+
 ### 配置说明
 
 1. 基本配置 config->config.js 里面有详细的说明
@@ -73,7 +73,7 @@
              isTabsShow: true, // 是否显示多页签 默认true
              headMaxWidth: false // 栏目头部是否通顶（最大宽度） 默认false
         }
-        
+    
 2. 用户数据 在store.js里面配置 (实际项目可根据接口设置)
         
         state: {
@@ -85,7 +85,7 @@
                 userName: '曾小晖'
             }
         }
-        
+    
 3. 路由鉴权 (已测就算错误访问地址程序报错崩溃 非法的路由也可以重定向到默认首页)
 
             // 一级栏目
@@ -126,7 +126,7 @@
         npm install babel-polyfill --save
         在main.js 
         import 'babel-polyfill'
-        
+    
 2. 存储路由数据到vuex 路由跳转时把vuex数据存到本地 一直报错
 
         Cannot assign to read only property 'matched' of object '#<Object>'
@@ -134,18 +134,18 @@
         解决办法： 重新定义数据格式保存
         
         也有个潜在的问题：在路由跳转之前拦截 直接用JSON.stringify(to) 报错看不出问题原因
-        
+    
 ### 效果
 https://www.zengxiaohui.com/Hui-Admin-Pro
-![时尚酷黑主题](other/admin1.jpg)
+![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin1.jpg)
 
-![时尚酷黑主题](other/admin1-1.jpg)
+![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin1-1.jpg)
 
-![时尚酷黑主题](other/admin1-2.jpg)
+![时尚酷黑主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin1-2.jpg)
 
-![极简雅白主题](other/admin2.jpg)
+![极简雅白主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin2.jpg)
 
-![极简雅白主题](other/admin2-1.jpg)
+![极简雅白主题](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/admin2-1.jpg)
 
 ### 支持作者
 
@@ -155,7 +155,7 @@ https://www.zengxiaohui.com/Hui-Admin-Pro
 
 4. 使用 支付宝 或 微信 请我喝杯咖啡
 
-![收款码](other/skm.jpg)
+![收款码](https://gitee.com/zengxiaohui2019/Hui-Admin-Pro/raw/master/other/skm.jpg)
      
 ### 免责申明
 
