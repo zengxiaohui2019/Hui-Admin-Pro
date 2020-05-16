@@ -1,15 +1,21 @@
 # Hui-Admin Pro
 ## 专业全功能版
 
-1. 简述：如果你不想支付9999体验iview-Admin-Pro,或许Hui-Admin Pro专业版是你的另外一个选择，
-是基于基础版 增加更多复杂功能 [在线演示](https://www.zengxiaohui.com/Hui-Admin-Pro)
-    
+1. 简述：如果你不想支付9999体验iview-Admin-Pro,或许Hui-Admin-Pro是你的另外一个选择。
+
+    - Hui-Admin-Pro是基于[基础版 Hui-Admin-Template](https://github.com/zengxiaohui2019/Hui-Admin-Template) 增加更多复杂功能 
+    - [Hui-Admin-Pro 在线演示](https://www.zengxiaohui.com/Hui-Admin-Pro)
+    - [Hui-Admin-Template 在线演示](https://www.zengxiaohui.com/Hui-Admin-Template)
+    - 说明：本人是写这个框架是抱着学习态度，无意冲突商业大佬利益。
+    - 兼容说明：初测兼容ie11 360极速模式 谷歌 火狐 其他未测；界面适配笔记本和日常PC；不适配平板和手机。
+        
 2. 主要技术：
 
         iview4.0 + vuecli3.0
         vue-router路由跳转 (层级嵌套适配、跳转前的拦截、跳转后页面自动滚到顶部)
         vuex管理 (导航高亮、多分页标签切换、根据用户动态菜单路由控制等)
         less flex弹性布局
+        没有使用eslint 代码风格插件
         
 3. 更新日志：
         
