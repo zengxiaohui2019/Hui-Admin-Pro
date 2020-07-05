@@ -122,7 +122,7 @@ export default {
                 {
                     title: '曾小晖 在一篇文章中 @你',
                     time: '11-08 15:33',
-                    img: 'https://www.zengxiaohui.com/skin/xiaohui/img/avatar.jpg'
+                    img: 'https://githup.zengxiaohui.com/vueImg/avatar1.jpg'
                 }
             ],
             db: [

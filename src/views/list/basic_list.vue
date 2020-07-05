@@ -141,7 +141,7 @@
                     user: '',
                     time: '',
                     progress: 0,
-                    img: 'https://www.zengxiaohui.com/vueImg/avatar1.jpg'
+                    img: 'https://githup.zengxiaohui.com/vueImg/avatar1.jpg'
                 },
                 checkJson: {
                     name: [
@@ -166,7 +166,7 @@
                         user: '曾小晖',
                         time: '2019-10-04 09:00',
                         progress: 65,
-                        img: 'https://www.zengxiaohui.com/vueImg/avatar.jpg'
+                        img: 'https://githup.zengxiaohui.com/vueImg/avatar.jpg'
                     },
                     {
                         id: 2,
@@ -175,7 +175,7 @@
                         user: '曾小晖',
                         time: '2019-10-01 09:00',
                         progress: 80,
-                        img: 'https://www.zengxiaohui.com/vueImg/avatar1.jpg'
+                        img: 'https://githup.zengxiaohui.com/vueImg/avatar1.jpg'
                     },
                     {
                         id: 3,
@@ -184,7 +184,7 @@
                         user: '曾小晖',
                         time: '2019-08-08 09:00',
                         progress: 100,
-                        img: 'https://www.zengxiaohui.com/vueImg/avatar2.jpg'
+                        img: 'https://githup.zengxiaohui.com/vueImg/avatar2.jpg'
                     },
                     {
                         id: 4,
@@ -193,7 +193,7 @@
                         user: '曾小晖',
                         time: '2019-09-15 09:00',
                         progress: 90,
-                        img: 'https://www.zengxiaohui.com/vueImg/avatar3.jpg'
+                        img: 'https://githup.zengxiaohui.com/vueImg/avatar3.jpg'
                     }
                 ],
                 userData: ['曾小晖','晖小晖','小曾晖','小晖曾','晖小曾',]

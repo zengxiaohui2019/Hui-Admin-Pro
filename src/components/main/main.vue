@@ -101,7 +101,7 @@
                         <span>
                             <Dropdown @on-click="personalSettings">
                             <a href="javascript:void(0)" style="color: #515A6E;">
-                                <img src="https://www.zengxiaohui.com/vueImg/avatar1.jpg" alt="" class="ivu-avatar ivu-avatar-small"
+                                <img src="https://githup.zengxiaohui.com/vueImg/avatar1.jpg" alt="" class="ivu-avatar ivu-avatar-small"
                                      style="margin-right: 5px">
                                 {{$store.getters.userData.userName}}
                             </a>

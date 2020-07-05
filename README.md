@@ -4,8 +4,8 @@
 1. 简述：如果你喜欢iviewUI风格,或许Hui-Admin-Pro是你的另外一个选择。
 
     - Hui-Admin-Pro是基于[基础版 Hui-Admin-Template](https://github.com/zengxiaohui2019/Hui-Admin-Template) 增加更多复杂功能 
-    - [Hui-Admin-Pro 在线演示](https://www.zengxiaohui.com/Hui-Admin-Pro)
-    - [Hui-Admin-Template 在线演示](https://www.zengxiaohui.com/Hui-Admin-Template)
+    - [Hui-Admin-Pro 在线演示](https://github.zengxiaohui.com/Hui-Admin-Pro)
+    - [Hui-Admin-Template 在线演示](https://github.zengxiaohui.com/Hui-Admin-Template)
     - 说明：本人写这个框架是抱着学习态度，无意冲突商业大佬利益。
     - 兼容说明：初测兼容ie11 360极速模式 谷歌 火狐 其他未测；界面适配笔记本和日常PC；不适配平板和手机。
         
