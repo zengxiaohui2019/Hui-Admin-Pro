@@ -56,7 +56,7 @@
                     <div class="body flexR">
                         <div class="flexR">
                             <div>
-                                <Avatar src="https://githup.zengxiaohui.com/vueImg/avatar1.jpg" size="large"/>
+                                <Avatar src="https://github.zengxiaohui.com/vueImg/avatar1.jpg" size="large"/>
                             </div>
                             <div class="flexC">
                                 <span>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="flexR">
                             <div>
-                                <Avatar src="https://githup.zengxiaohui.com/vueImg/avatar2.jpg" size="large"/>
+                                <Avatar src="https://github.zengxiaohui.com/vueImg/avatar2.jpg" size="large"/>
                             </div>
                             <div class="flexC">
                                 <span>
@@ -82,7 +82,7 @@
                         </div>
                         <div class="flexR">
                             <div>
-                                <Avatar src="https://githup.zengxiaohui.com/vueImg/avatar.jpg" size="large"/>
+                                <Avatar src="https://github.zengxiaohui.com/vueImg/avatar.jpg" size="large"/>
                             </div>
                             <div class="flexC">
                                 <span>
@@ -161,7 +161,7 @@
                         <div class="flexR">
                             <div class="flexR">
                                 <div>
-                                    <Avatar src="https://githup.zengxiaohui.com/vueImg/avatar1.jpg"/>
+                                    <Avatar src="https://github.zengxiaohui.com/vueImg/avatar1.jpg"/>
                                 </div>
                                 <div class="flexC">
                                     <span>
@@ -177,7 +177,7 @@
                         <div class="flexR">
                             <div class="flexR">
                                 <div>
-                                    <Avatar src="https://githup.zengxiaohui.com/vueImg/avatar2.jpg"/>
+                                    <Avatar src="https://github.zengxiaohui.com/vueImg/avatar2.jpg"/>
                                 </div>
                                 <div class="flexC">
                                     <span>
@@ -193,7 +193,7 @@
                         <div class="flexR">
                             <div class="flexR">
                                 <div>
-                                    <Avatar src="https://githup.zengxiaohui.com/vueImg/avatar3.jpg"/>
+                                    <Avatar src="https://github.zengxiaohui.com/vueImg/avatar3.jpg"/>
                                 </div>
                                 <div class="flexC">
                                     <span>
@@ -219,37 +219,37 @@
         name: "workplace",
         data() {
             return {
-                avatarImg: 'https://githup.zengxiaohui.com/vueImg/avatar1.jpg',
+                avatarImg: 'https://github.zengxiaohui.com/vueImg/avatar1.jpg',
                 myProjectData: [
                     {
                         name_en: 'Hui Admin Pro',
                         name_cn: '企业级中台前端解决方案',
-                        img: 'https://githup.zengxiaohui.com/vueImg/img8.jpg'
+                        img: 'https://github.zengxiaohui.com/vueImg/img8.jpg'
                     },
                     {
                         name_en: 'ZengXiaoHui Boke',
                         name_cn: '曾小晖个人博客',
-                        img: 'https://githup.zengxiaohui.com/vueImg/img2.jpg'
+                        img: 'https://github.zengxiaohui.com/vueImg/img2.jpg'
                     },
                     {
                         name_en: 'Hui Admin Pro',
                         name_cn: '企业级中台前端解决方案',
-                        img: 'https://githup.zengxiaohui.com/vueImg/img3.jpg'
+                        img: 'https://github.zengxiaohui.com/vueImg/img3.jpg'
                     },
                     {
                         name_en: 'Hui Admin Pro',
                         name_cn: '企业级中台前端解决方案',
-                        img: 'https://githup.zengxiaohui.com/vueImg/img4.jpg'
+                        img: 'https://github.zengxiaohui.com/vueImg/img4.jpg'
                     },
                     {
                         name_en: 'Hui Admin Pro',
                         name_cn: '企业级中台前端解决方案',
-                        img: 'https://githup.zengxiaohui.com/vueImg/img9.jpg'
+                        img: 'https://github.zengxiaohui.com/vueImg/img9.jpg'
                     },
                     {
                         name_en: 'Hui Admin Pro',
                         name_cn: '企业级中台前端解决方案',
-                        img: 'https://githup.zengxiaohui.com/vueImg/img6.jpg'
+                        img: 'https://github.zengxiaohui.com/vueImg/img6.jpg'
                     }
                 ], // 我的项目
             }

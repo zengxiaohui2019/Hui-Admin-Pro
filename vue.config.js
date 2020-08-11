@@ -10,5 +10,12 @@ module.exports = {
                 pathRewrite: { '^/dev-api': '' }
             }
         }
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                'vue$': 'vue/dist/vue.esm.js',
+            }
+        },
     }
 }

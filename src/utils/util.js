@@ -25,3 +25,9 @@ export const isBlank = (data) => {
 export const backPage = () => {
   router.go(-1)
 }
+
+export const renderModal = () => {
+  (new Promise((resolve, reject) => {
+
+  }))
+}

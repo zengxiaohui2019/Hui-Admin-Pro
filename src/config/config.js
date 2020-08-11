@@ -4,9 +4,11 @@
  *   @date 2019/10/5
  */
 // 默认系统名称
-export const siteTitle = 'Hui-Admin-Pro 企业级中台前端解决方案'
+// export const siteTitle = 'Hui-Admin-Pro 企业级中台前端解决方案'
+    export const siteTitle = '仓库设备管理系统'
 // 默认首页
-export const indexPage = 'workplace'
+export const indexPage = 'Home'
+// export const indexPage = 'workplace'
 // 默认登录页
 export const loginPage = 'login'
 
