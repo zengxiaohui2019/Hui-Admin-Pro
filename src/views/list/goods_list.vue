@@ -37,7 +37,7 @@
                     {
                         id: 1,
                         title: 'Vue.js项目实战',
-                        img: 'https://githup.zengxiaohui.com/vueImg/douban/s29939950.jpg',
+                        img: 'https://github.zengxiaohui.com/vueImg/douban/s29939950.jpg',
                         type: 2,
                         desc: 'Vue.js 核心团队成员-[法]纪尧姆·周 ',
                         price: 69,
@@ -46,7 +46,7 @@
                     {
                         id: 1,
                         title: '史蒂夫·乔布斯传',
-                        img: 'https://githup.zengxiaohui.com/vueImg/douban/s6974202.jpg',
+                        img: 'https://github.zengxiaohui.com/vueImg/douban/s6974202.jpg',
                         type: 2,
                         desc: '[美] 沃尔特·艾萨克森 / 管延圻',
                         price: 68,
@@ -55,7 +55,7 @@
                     {
                         id: 1,
                         title: '自私的基因',
-                        img: 'https://githup.zengxiaohui.com/vueImg/douban/s11214645.jpg',
+                        img: 'https://github.zengxiaohui.com/vueImg/douban/s11214645.jpg',
                         type: 1,
                         desc: '[英]理查德·道金斯 / 卢允中',
                         price: 68,
@@ -64,7 +64,7 @@
                     {
                         id: 1,
                         title: '平凡的世界',
-                        img: 'https://githup.zengxiaohui.com/vueImg/douban/s1144911.jpg',
+                        img: 'https://github.zengxiaohui.com/vueImg/douban/s1144911.jpg',
                         type: 1,
                         desc: '路遥',
                         price: 64,
@@ -73,7 +73,7 @@
                     {
                         id: 1,
                         title: '如何让你爱的人爱上你',
-                        img: 'https://githup.zengxiaohui.com/vueImg/douban/s6639653.jpg',
+                        img: 'https://github.zengxiaohui.com/vueImg/douban/s6639653.jpg',
                         type: 0,
                         desc: '[美] 莉尔·朗兹 译: 毛燕鸿',
                         price: 38.5,
@@ -82,7 +82,7 @@
                     {
                         id: 1,
                         title: '去西伯利亚走江湖',
-                        img: 'https://githup.zengxiaohui.com/vueImg/douban/32524069.jpg',
+                        img: 'https://github.zengxiaohui.com/vueImg/douban/32524069.jpg',
                         type: 1,
                         desc: '樊北溟',
                         price: 0,

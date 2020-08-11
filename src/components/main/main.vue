@@ -12,9 +12,10 @@
             >
                 <!--:class="isCollapsed?'collapsed_left':''"-->
                 <div class="logo" :class="headMaxWidth?'headMaxWidth':''">
-                    <img v-if="!isCollapsed && headMaxWidth" :src="headMaxWidthLogoImg" alt="">
-                    <img v-if="!isCollapsed && !headMaxWidth" :src="logoImg" alt="">
-                    <img v-if="isCollapsed" src="../../assets/main/logo-small.png" alt="">
+                    <h2 style="color: #ffffff">仓库设备管理系统</h2>
+<!--                    <img v-if="!isCollapsed && headMaxWidth" :src="headMaxWidthLogoImg" alt="">-->
+<!--                    <img v-if="!isCollapsed && !headMaxWidth" :src="logoImg" alt="">-->
+<!--                    <img v-if="isCollapsed" src="../../assets/main/logo-small.png" alt="">-->
                 </div>
                 <Menu
                     :active-name="activeName"
@@ -101,7 +102,7 @@
                         <span>
                             <Dropdown @on-click="personalSettings">
                             <a href="javascript:void(0)" style="color: #515A6E;">
-                                <img src="https://githup.zengxiaohui.com/vueImg/avatar1.jpg" alt="" class="ivu-avatar ivu-avatar-small"
+                                <img src="https://github.zengxiaohui.com/vueImg/avatar1.jpg" alt="" class="ivu-avatar ivu-avatar-small"
                                      style="margin-right: 5px">
                                 {{$store.getters.userData.userName}}
                             </a>
@@ -197,6 +198,7 @@
     import lightImg from '@/assets/main/logo-light.png'
     import {themeData} from '@/config/config'
     import Footer from "@/components/footer/footer"
+    import Vue from "vue"
     import { mapGetters } from 'vuex'
     export default {
         name: "main-page",
@@ -245,6 +247,7 @@
         },
         created() {
             this.setRouterArr()
+            Vue.prototype.$renderModal = this.renderModal
         },
         mounted() {
             // 如果没有权限 回到默认首页 防止错误地址程序崩溃 跳转非法路由
@@ -438,6 +441,47 @@
                     this.$router.push({
                         name: this.$loginPage
                     })
+                }
+            },
+            // utils 组件工具
+            /**
+             * 懒加载渲染弹窗的方法
+             * @param {String} type 需要的弹窗类型
+             * @param {String} content 需要渲染的内容
+             * @param {String} componentUrl 懒加载组件的地址位置
+             * @param {Function} accept 确认回调方法
+             * @param {Function} cancel 取消回调方法
+             *
+             * */
+            renderModal(type, content, componentUrl, accept, cancel) {
+                try {
+                    if(componentUrl) {
+                        const component = require(`@/${componentUrl}`)
+                        this.$Modal.success({
+                            title: '测试',
+                            render: h => h(component.default),
+                            onOk: () => {
+                                if(accept && typeof accept === 'function') accept()
+                            },
+                        })
+                    } else {
+                        this.$Modal.confirm({
+                            title: '测试',
+                            content,
+                            onOk: () => {
+                                if(accept && typeof accept === 'function') accept()
+                            },
+                            onCancel: () => {
+                                if(cancel && typeof cancel === 'function') cancel()
+                            },
+                        })
+                    }
+                } catch(error) {
+                    this.$Message.error({
+                        background: true,
+                        content: error
+                    })
+                    console.log('error', error)
                 }
             }
         },

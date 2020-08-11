@@ -16,6 +16,7 @@ import Main from "@/components/main/main";
 
 // 不需要权限校验的静态路由
 export const constantRoutes = [
+    // 登陆路由
     {
         path: "/login",
         name: "login",
@@ -25,20 +26,47 @@ export const constantRoutes = [
         },
         component: () => import("@/views/login/login")
     },
+    // 首页路由
     {
         path: "/",
-        name: "Dashboard",
-        redirect: '/workplace',
+        name: "Home",
+        redirect: '/home',
         component: Main,
         meta: {
             hide: false,
-            title: "Dashboard",
+            title: "Home",
             icon: "md-speedometer",
+            singlePage: true
         },
         children: [
             {
-                path: "/workplace",
-                name: "workplace",
+                path: "/home",
+                name: "home",
+                meta: {
+                    hide: false,
+                    title: "首页",
+                    permission: ['admin']
+                },
+                component: () => import("@/views/Dashboard/workplace")
+            },
+        ]
+    },
+    // 工作台路由
+    {
+        path: "/",
+        name: "Workspace",
+        redirect: '/workspace',
+        component: Main,
+        meta: {
+            hide: false,
+            title: "Workspace",
+            icon: "md-speedometer",
+            singlePage: true
+        },
+        children: [
+            {
+                path: "/workspace",
+                name: "Workspace",
                 meta: {
                     hide: false,
                     title: "工作台",
@@ -48,26 +76,92 @@ export const constantRoutes = [
             },
         ]
     },
+    // 仓库设备路由
     {
-        path: "/brief",
-        name: "brief",
+        path: '/warehouse',
+        name: 'Warehouse',
+        redirect: '/warehouse/dequipment',
         component: Main,
         meta: {
             hide: false,
-            title: "简叙",
-            icon: "md-heart-outline",
+            title: 'Warehouse',
+            icon: 'logo-dropbox',
             singlePage: true
         },
         children: [
             {
-                path: "/brief/brief",
-                name: "brief_brief",
+                path: '/warehouse/dequipment',
+                name: 'Dequipment',
                 meta: {
                     hide: false,
-                    title: "简叙",
-                    icon: 'md-heart-outline'
+                    title: '仓库设备'
                 },
-                component: () => import("@/views/brief/brief")
+                component: () => import("@/components/AgGrid/AgGridView")
+            }
+        ]
+    },
+    // 统计
+    {
+        path: '/',
+        name: 'Statistics',
+        redirect: '/statistics',
+        component: Main,
+        meta: {
+            hide: false,
+            title: 'Statistics',
+            icon: 'logo-dropbox',
+            singlePage: true
+        },
+        children: [
+            {
+                path: '/statistics',
+                name: 'Statistics',
+                meta: {
+                    hide: false,
+                    title: '统计'
+                },
+                component: () => import("@/views/Dashboard/workplace")
+            }
+        ]
+    },
+    // 系统管理
+    {
+        path: "/system",
+        name: 'System',
+        component: Main,
+        meta: {
+            hide: false,
+            title: '系统管理',
+            icon: 'ios-cog',
+        },
+        children: [
+            {
+                path: '/system/user',
+                name: 'user',
+                meta: {
+                    hide: false,
+                    title: '用户管理',
+                    icon: 'ios-person'
+                },
+                component: () => import("@/views/form/basic_form")
+            },
+            {
+                path: '/system/department',
+                name: 'department',
+                meta: {
+                    hide: false,
+                    title: '部门管理',
+                },
+                component: () => import("@/views/form/basic_form")
+            },
+            {
+                path: '/system/projectList',
+                name: 'projectList',
+                meta: {
+                    hide: false,
+                    title: '项目管理',
+                },
+                component: () => import("@/views/form/basic_form")
             }
         ]
     },

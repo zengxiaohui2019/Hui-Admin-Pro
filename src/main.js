@@ -2,13 +2,17 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router"; // 路由
 import './router/permission'; // 加载路由权限控制
+import './globalComponent'
 import store from "./store";
 import 'babel-polyfill' // 解决ie兼容问题
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
 import "./css/public.less"; // 公共css样式
 
+import { AgGridVue } from 'ag-grid-vue'
+
 Vue.use(ViewUI);
+Vue.component(AgGridVue.name, AgGridVue);
 
 
 // 工具

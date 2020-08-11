@@ -15,7 +15,7 @@
             <p>其实，自己本身vue技术一般般，做出这样的一个比较完善的系统，感觉很有难度，当时就想试试看反正可以练练手，失败了也无所谓。</p>
             <p>考虑到一些路由鉴权、多页签滚动切换、导航鉴权、导航收缩展开、导航显隐高亮判断、页面局部刷新，主题切换等挺麻烦的，最后用了vuex状态管理解决了大部分问题，终于在2019-10-03凌晨的时候完成了基础版1.0</p>
             <p>
-                就这样差不多3天时间做出《基础框架简洁版》 <a href="https://githup.zengxiaohui.com/Hui-Admin-Template" target="_blank" title="基础框架简洁版-预览">(预览)</a>
+                就这样差不多3天时间做出《基础框架简洁版》 <a href="https://github.zengxiaohui.com/Hui-Admin-Template" target="_blank" title="基础框架简洁版-预览">(预览)</a>
                 <a href="https://gitee.com/zengxiaohui2019/Hui-Admin-Template" target="_blank" style="margin-left: 15px" title="基础框架简洁版-码云">(码云)</a>
                 ，感觉也没那么难，就给我增加了很大的信心！
             </p>
@@ -23,7 +23,7 @@
         <div class="pageContent flexC">
             <p style="font-size: 16px">3.《专业版》</p>
             <p>
-                2019-10-04 新开项目《专业版》 <a href="https://githup.zengxiaohui.com/Hui-Admin-Pro" target="_blank" title="专业版-预览">(预览)</a>
+                2019-10-04 新开项目《专业版》 <a href="https://github.zengxiaohui.com/Hui-Admin-Pro" target="_blank" title="专业版-预览">(预览)</a>
                 <a href="https://gitee.com/zengxiaohui2019/Hui-Admin-Pro" target="_blank" style="margin-left: 15px" title="专业版-码云">(码云)</a>
             </p>
             <p>目前设计了七大板块功能，涵盖常见业务处理功能，目前正在开发中，个人正常上班，开发只有利用休息时间。</p>
