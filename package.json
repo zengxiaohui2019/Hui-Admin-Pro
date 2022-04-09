@@ -12,7 +12,7 @@
     "core-js": "^2.6.5",
     "echarts": "^4.3.0",
     "mockjs": "^1.0.1-beta3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "view-design": "^4.0.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
